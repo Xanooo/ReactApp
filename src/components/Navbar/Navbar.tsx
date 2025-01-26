@@ -8,6 +8,7 @@ function Navbar({ items }: NavbarProps) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <nav>
+      <h2>Anime CentralHub</h2>
       {items.map((items) => (
         <li key={items}>
           <a href="#">{items}</a>
