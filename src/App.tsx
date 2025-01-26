@@ -1,13 +1,9 @@
-import Alert from "./components/Alert";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  return (
-    <div>
-      <Alert>
-        Hello <span>World</span>
-      </Alert>
-    </div>
-  );
+  let items = ["Home", "About", "Work", "Contact"];
+
+  return <Navbar items={items}></Navbar>;
 }
 
 export default App;
