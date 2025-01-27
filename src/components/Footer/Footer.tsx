@@ -1,14 +1,8 @@
-interface FooterProps {
-  discordPath: string;
-  githubPath: string;
-}
-
-function Footer({ discordPath, githubPath }: FooterProps) {
+function Footer() {
+  const link = ["./assets/github.png", "./assets/discord.png"];
   return (
     <footer>
       <h1>Nous contacter</h1>
-      <img src={discordPath} />
-      <img src={githubPath} />
     </footer>
   );
 }

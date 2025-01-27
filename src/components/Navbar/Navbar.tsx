@@ -1,22 +1,27 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  items: string[];
-}
+function Navbar() {
+  const items = [
+    { label: "Accueil", path: "/" },
+    { label: "Anime", path: "/anime" },
+    { label: "Formulaire", path: "/formulaire" },
+    { label: "Se connecter", path: "/seconnecter" },
+    { label: "À propos", path: "/about" },
+  ];
 
-function Navbar({ items }: NavbarProps) {
-  const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <nav>
       <h2>Anime CentralHub</h2>
-      {items.map((items) => (
-        <li key={items}>
-          <a href="#">{items}</a>
-        </li>
-      ))}
+      <ul>
+        {items.map((item) => (
+          <li key={item.path}>
+            <Link to={item.path}>{item.label}</Link>
+          </li>
+        ))}
+      </ul>
       <form>
-        <input type="search" placeholder="Search"></input>
-        <input type="button" value="Search"></input>
+        <input type="search" placeholder="Search" />
+        <input type="button" value="Search" />
       </form>
     </nav>
   );
