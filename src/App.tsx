@@ -4,7 +4,7 @@ import About from "./components/About/About";
 import Anime from "./components/Anime/Anime";
 import Form from "./components/Form/Form";
 import Connect from "./components/Connect/Connect";
-
+import "./App.css";
 import Footer from "./components/Footer/Footer";
 
 function App() {

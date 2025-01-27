@@ -1,0 +1,9 @@
+.navbar-brand{
+    color: #5FC2BA !important;
+}
+
+
+.navbar .nav-link {
+    color: #5FC2BA !important; 
+    transition: color 0.3s ease; 
+  }
