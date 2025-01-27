@@ -10,9 +10,9 @@ function Footer() {
     { label: "À propos", path: "/about" },
   ];
   return (
-    <footer className="py-3 my-4">
+    <footer className="py-3 my-4 bg-dark">
       <h2>Nous contacter</h2>
-      <nav className="navbar navbar-expand-lg navbar-light ">
+      <nav className="navbar navbar-expand-lg navbar-light  ">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
